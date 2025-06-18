@@ -1,0 +1,60 @@
+# Node modules (for both client and server)
+**/node_modules/
+.pnpm-store/
+
+# Build output
+client/build/
+dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# dotenv environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS / System files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Parcel / Vite cache
+.cache/
+client/.cache/
+client/.vite/
+
+# Coverage reports
+coverage/
+
+# Test output
+*.test.js.snap
+
+# Misc
+*.tgz
+*.tar.gz
+
+# Optional: Ignore log files from Express if you log to a file
+server/access.log
+server/error.log
+
+# Optional: Ignore .next if using Next.js in future
+.next/
+
+# Optional: Ignore React Dev Tools
+client/.react-devtools/
+
+# Ignore local production builds
+server/build/
