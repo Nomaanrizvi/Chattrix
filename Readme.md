@@ -20,7 +20,7 @@
 
 **Frontend:**
 - React
-- Tailwind CSS (or your CSS setup)
+- Tailwind CSS
 - Socket.IO Client
 
 **Backend:**
