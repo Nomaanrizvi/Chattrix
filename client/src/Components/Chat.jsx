@@ -13,7 +13,8 @@ const Chat = () => {
 
   const navigate = useNavigate();
   const location = useLocation()
-  const ENDPOINT = 'https://chattrix-45x7.onrender.com'
+  const ENDPOINT = 'https://chattrix-q75w.onrender.com'
+  // const ENDPOINT = 'http://localhost:3000'
 
   const [Name, setName] = useState("")
   const [Room, setRoom] = useState("")
@@ -80,8 +81,10 @@ const Chat = () => {
       </div>
 
       {/* Main Chat Section */}
-      <div className='flex justify-center items-center bg-[#1A1A1D] h-[calc(100vh-184px)]'>
-        <div className='flex flex-col justify-between bg-white rounded-lg h-[85%] w-[35%] shadow-md'>
+      <div className='flex flex-col lg:flex-row justify-center items-center bg-[#1A1A1D] h-[calc(100vh-184px)] gap-6 px-4'>
+        
+
+        <div className='flex flex-col justify-between bg-white rounded-lg h-[85%] w-[90%] sm:w-[80%] md:w-[60%] lg:w-[35%] shadow-md'>
           <InfoBar room={Room} />
 
           <ScrollToBottom className='py-[5%] overflow-auto flex-auto'>
@@ -114,7 +117,7 @@ const Chat = () => {
       </div>
 
       {/* footer Section */}
-      <div className='flex flex-col items-center justify-center bg-[#1A1A1D] text-white py-4'>
+      <div className='hidden md:flex flex-col items-center justify-center bg-[#1A1A1D] text-white py-4'>
         <h2 className="text-lg text-gray-300 font-medium">
           Built with React, Express, Node & Socket.IO By Nomaan <span role="img" aria-label="emoji">❤️</span>
         </h2>
